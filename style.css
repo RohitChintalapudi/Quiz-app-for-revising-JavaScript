@@ -12,15 +12,17 @@ body {
 #container {
     background-color: white;
     width: 25%;
+    min-width: 280px;
+    max-width: 500px;
     text-align: center;
     border: 5px solid black;
     border-radius: 10px;
-    padding-bottom: 10px;
+    padding: 15px 10px;
     box-shadow: 0 0 30px black;
 }
 
 #question-text {
-    font-size: large;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -36,41 +38,38 @@ ul {
     background-color: beige;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 6px 8px;
+    padding: 0.6rem 0.8rem;
     list-style-type: none;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     width: 80%;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-#start {
+#start,
+#next {
     background-color: aqua;
     font-weight: bold;
-    padding: 10px 12px;
-    margin-top: 10px;
+    padding: 0.8rem 1rem;
+    margin-top: 0.8rem;
     border-radius: 10px;
     cursor: pointer;
-}
-#next{
-    background-color: aqua;
-    font-weight: bold;
-    padding: 10px 12px;
-    margin-top: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+    font-size: 1rem;
 }
 
 #list .list-item-select {
     background-color: rgb(136, 212, 21);
     border: 2px solid black;
     border-radius: 10px;
-    padding: 6px 8px;
+    padding: 0.6rem 0.8rem;
     list-style-type: none;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     width: 80%;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .hidden {
@@ -79,7 +78,61 @@ ul {
 
 #result {
     margin-bottom: -2px;
-    font-size: large;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    #container {
+        width: 60%;
+    }
+
+    #question-text {
+        font-size: 1rem;
+    }
+
+    #list .list-item,
+    #list .list-item-select {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    #start,
+    #next {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #question-text {
+        font-size: 0.9rem;
+    }
+
+    #list .list-item,
+    #list .list-item-select {
+        font-size: 0.85rem;
+    }
+
+    #start,
+    #next {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    #result {
+        font-size: 1rem;
+    }
+}
