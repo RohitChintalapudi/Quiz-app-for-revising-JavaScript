@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="quiz-heading">Quiz Contest</h1>
+
+        <div id="question-container">
+            <p id="question-text" class="hidden">
+            </p>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <p id="result" class="hidden">
+            </p>
+        </div>
+
+        <!-- Options Section -->
+        <div id="options" class="hidden">
+            <ul id="list" class="hidden">
+            </ul>
+        </div>
+        <button id="start">Start Quiz</button>
+        <button id="next" class="hidden">Next</button>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
