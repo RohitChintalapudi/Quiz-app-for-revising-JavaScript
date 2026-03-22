@@ -5,7 +5,7 @@ I developed this project to **revise and apply all the JavaScript concepts I’v
 
 ---
 
-## 🚀 Features
+##  Features
 - Start quiz and display one question at a time  
 - Multiple-choice options with click-to-select  
 - Score calculation at the end with a results screen  
@@ -15,14 +15,14 @@ I developed this project to **revise and apply all the JavaScript concepts I’v
 
 ---
 
-## 🎯 Purpose of this project
+##  Purpose of this project
 - **One-stop JavaScript revision**: DOM updates, event handling, arrays, and conditionals  
 - Practice **clean code organization**  
 - Reinforce **basic HTML and CSS structure** while making a functional app  
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **HTML5** – app structure  
 - **CSS3** – custom styling (gradient background, buttons, responsive layout)  
 - **JavaScript (ES6)** – quiz logic, score calculation, dynamic question loading, confetti animation  
